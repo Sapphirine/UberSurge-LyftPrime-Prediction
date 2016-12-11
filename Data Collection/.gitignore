@@ -1,0 +1,5 @@
+# JetBrains
+.idea/
+
+# Config
+*.cfg
