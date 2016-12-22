@@ -1,9 +1,10 @@
+import datetime
 import json
 import os
+
 import datavec as dv
-import datetime
-import time
 import perf_print
+
 
 #query_cnt = input('query_cnt:')
 
@@ -61,4 +62,4 @@ with open('../processed/lyft/lyft.csv','w+') as profile:
                 profile.write(str(loc_data[i].data[j][0]) + ' ' + str(loc_data[i].data[j][1]) + '\n')
         end = datetime.datetime.now()
         ct = end-start
-        perf_print.print_perf(str(ct.microseconds),'lyft.csv','microsecond',dat_cnt,'Lyft data Parsed')
+        perf_print.print_perf(str(ct.microseconds), 'lyft.csv', 'microsecond', dat_cnt, 'Lyft data Parsed')

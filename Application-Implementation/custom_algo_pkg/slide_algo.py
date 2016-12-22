@@ -8,12 +8,12 @@ K-means prediction
 Assign User to Block according to nearest neighbor
 '''
 
-import supportvec
-import sys
 import csv
 import datetime
 import math
-from mypkg import debug
+import sys
+
+import supportvec
 
 #global variable
 all_windows_size = 1814400
@@ -181,7 +181,7 @@ def data_read(location,type):
                     ntime = paras[5][0:(len(paras[5])-1)]
                     rtime = convert_time(paras[4] + ' ' + ntime)
                     #print rtime
-                    tmpvec = supportvec.supvec(price,location,float(rtime),paras[4])
+                    tmpvec = supportvec.supvec(price, location, float(rtime), paras[4])
                     datarepo.append(tmpvec)
                 else:
                     '''
@@ -205,7 +205,7 @@ def data_read(location,type):
                     ntime = paras[5][0:(len(paras[5]) - 1)]
                     rtime = convert_time(paras[4] + ' ' + ntime)
                     #print rtime
-                    tmpvec = supportvec.supvec(price,location,float(rtime),paras[4])
+                    tmpvec = supportvec.supvec(price, location, float(rtime), paras[4])
                     datarepo.append(tmpvec)
                 else:
                     '''

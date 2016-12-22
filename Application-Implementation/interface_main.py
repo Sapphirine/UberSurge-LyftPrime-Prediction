@@ -2,7 +2,7 @@ import os
 import sys
 from matplotlib import pyplot as plt
 import datetime
-from mypkg import main_process as mp
+import main_process as mp
 
 def convert_time(time):
     #print time
