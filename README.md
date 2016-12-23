@@ -17,12 +17,12 @@ Link : https://drive.google.com/open?id=0B5hOAHMAiNjcSmJHY2tEd1IwVmM
 This package contains the data retrieving code from Uber and Lyft API of the project. 
 It also contains the handler of DynamoDB for data storage.
 
-## Application-Implementation
+### Application-Implementation
 This package is the main part of this project, which contains the model, training, testing and API part of the predictive algorithm. 
 Moreover, it could read raw data from DynamoDB and do the data parsing, cleaning and preparation.
 
-## Algorithm-Reference
+### Algorithm-Reference
 This part contains the references of the major algorithms utilized by this project.
 
-## Frontend
+### Frontend
 As it named, this part contains the frontend user interface of the project. It parses user's inputs and talks to the backend API.
