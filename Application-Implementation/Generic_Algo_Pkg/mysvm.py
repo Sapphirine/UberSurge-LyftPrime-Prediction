@@ -1,7 +1,5 @@
 from custom_algo_pkg.slide_algo import *
 
-import os
-import sys
 from pyspc import *
 # Set the path for spark installation
 # this is the path where you have built spark using sbt/sbt assembly
@@ -23,8 +21,6 @@ except ImportError as e:
     print ("Error importing Spark Modules", e)
     sys.exit(1)
 
-import numpy as np
-import math
 
 def get_label(data):
     resdata = []

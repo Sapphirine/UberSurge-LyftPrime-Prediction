@@ -4,7 +4,7 @@ import os
 
 import datavec as dv
 import perf_print
-
+from data_processing_open_api import *
 
 #query_cnt = input('query_cnt:')
 
@@ -24,7 +24,7 @@ loc_data = []
 dat_cnt = 0
 start = datetime.datetime.now()
 
-with open('../processed/lyft/lyft.csv','w+') as profile:
+with open(lyftfilename,'w+') as profile:
     with open('../processed/lyft/blocklist.csv', 'w+') as blockfile:
         for file in os.listdir('../DataRepo/lyft'):
             '''

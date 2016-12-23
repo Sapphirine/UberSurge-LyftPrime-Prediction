@@ -1,8 +1,8 @@
-from custom_algo_pkg.slide_algo import *
-
 import os
 import sys
-import pyspc
+
+from custom_algo_pkg.slide_algo import *
+from pyspc import *
 # Set the path for spark installation
 # this is the path where you have built spark using sbt/sbt assembly
 os.environ['SPARK_HOME'] = "C:\Users\YuNick\Documents\spark-2.0.2-bin-hadoop2.7"
@@ -22,8 +22,6 @@ except ImportError as e:
     print ("Error importing Spark Modules", e)
     sys.exit(1)
 
-from numpy import array
-from math import sqrt
 '''
 sc = SparkContext()
 
