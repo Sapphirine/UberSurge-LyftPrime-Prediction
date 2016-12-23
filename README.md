@@ -1,12 +1,12 @@
+---
+Name: Yiwen Luo, Yu Gu, Siyan Yue
+Date: Dec 22, 2016
+Course: EECS 6893 Big Data Analytics
+Title: Uber Surge and Lyft Prime Time Prediction
+---
+
 # UberSurge-LyftPrime-Prediction
 Big Data Analytics Project at Columbia University (Fall 2016)
-
----
-name: Yiwen Luo, Yu Gu, Siyan Yue
-date: Dec 22, 2016
-Course: Big Data Analytics Project
-Project: Final Project
----
 
 ## Dataset
 DataRepo Contains a very small fraction of our actual dataset (around 2.5G)
