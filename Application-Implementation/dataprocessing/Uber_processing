@@ -4,7 +4,7 @@ import datavec as dv
 import datetime
 import time
 import perf_print
-
+from data_processing_open_api import *
 #query_cnt = input('query_cnt:')
 
 def custom_dict_insert(lng,lat,dat,time,dict):
@@ -23,7 +23,7 @@ loc_data = []
 dat_cnt = 0
 start = datetime.datetime.now()
 
-with open('../processed/uberx/uberx.csv','w+') as profile:
+with open(uberfilename,'w+') as profile:
     with open('../processed/uberx/blocklist.csv', 'w+') as blockfile:
         for file in os.listdir('../DataRepo/uberx'):
             '''

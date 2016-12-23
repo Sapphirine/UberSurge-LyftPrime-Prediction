@@ -93,6 +93,42 @@ def window_gen(alldata,me_time):
     #print windows
     return windows
 
+def convert_windows_to_cluster_data(windows):
+    data = []
+    for wins in windows:
+        tmp = [0,0,0,0,0,0]
+        cnt = 0
+        for i in wins.windowmatrix:
+            for j in i.daymatrix:
+                cnt += 1
+                tmp[0] += j.price
+                for p in range(0,5):
+                    tmp[p+1] += j.weather[p]
+        #print tmp[0]
+        #print cnt
+        tmp[0] /= cnt
+        print tmp[0]
+        for i in range(0,5):
+            tmp[i+1] /= cnt
+        data.append(tmp)
+    return data
+
+def convert_window_to_cluster_data(window):
+    tmp = [0,0,0,0,0,0]
+    cnt = 0
+    for i in window.windowmatrix:
+        for j in i.daymatrix:
+            cnt += 1
+            tmp[0] += j.price
+            for p in range(0,5):
+                tmp[p+1] += j.weather[p]
+    print tmp[0]
+    print cnt
+    tmp[0] /= cnt
+    for i in range(0,5):
+        tmp[i+1] /= cnt
+    return tmp
+
 def ba_weight(wA,wB):
     '''
     vec type ['40', '30', '0.00', '3.8', '37'] 7.0 12/09/16 1481305066.0

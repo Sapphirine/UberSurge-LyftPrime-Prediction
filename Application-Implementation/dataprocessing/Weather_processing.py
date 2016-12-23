@@ -4,10 +4,11 @@ import processing_var as pv
 import datetime
 import time
 import perf_print
+from data_processing_open_api import *
 
 month=['nov','dec']
 
-with open('../processed/weather.csv','w+') as profile:
+with open(weatherfilename,'w+') as profile:
     profile.write('date,maxt,mint,rain,wind,humidity\n')
     for file in os.listdir('../DataRepo/Weather'):
         print file

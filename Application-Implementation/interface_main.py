@@ -24,7 +24,7 @@ with open(sys.path[0]+'/processed/testB.txt','r+') as testfile:
     for line in testfile:
         paras = line.split(' ')
         t = paras[5][:len(paras[5])-1]
-        res = mp.main(1,[float(paras[1]),float(paras[2])],str(paras[4]+' '+t))
+        res = mp.main(2,[float(paras[1]),float(paras[2])],str(paras[4]+' '+t))
         rsec = convert_time(str(paras[4]+' '+t))
         #print [float(rsec),float(rsec)]
         #print [float(paras[0]),res[0]*7.0]
